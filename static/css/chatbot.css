@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* background-color: #f5f5f5; */
+    background-color: white;
+
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centramos el contenido del header */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+nav {
+    flex: 1;
+    max-width: 1200px; /* Limita el ancho máximo del nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centramos los elementos del ul */
+    list-style: none;
+    margin: 0 auto; /* Centramos el ul dentro del nav */
+    padding: 0;
+    gap: 20px;
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta este valor para hacer el logo más grande */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px; /* Ajusta el tamaño de la fuente aquí */
+}
+
+.replica {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.pedidos-online {
+    color: #FE6B30;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px; /* Tamaño fijo horizontal */
+    height: 600px; /* Tamaño fijo vertical */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Permite el desplazamiento cuando haya muchos mensajes */
+    height: 80%; /* Tamaño fijo dentro del contenedor */
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+#send-button {
+    background-color: #FF6F22; /* Color de fondo del botón */
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto */
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid white; /* Color del triángulo */
+}
+
+.arrow-rectangle {
+    width: 6px;
+    height: 8px;
+    background-color: white; /* Color del rectángulo */
+    margin-top: -1px; /* Ajusta la posición para unirlo con el triángulo */
+}
+
+#send-button:hover {
+    background-color: #E65A00; /* Color cuando se pasa el mouse */
+}
+
+#send-button:active {
+    background-color: #CC4F00; /* Color cuando se hace clic */
+}
+
+.message {
+    max-width: 75%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    clear: both; /* Evita la superposición de mensajes */
+    word-wrap: break-word; /* Asegura que las palabras largas se dividan en varias líneas */
+}
+
+.message.user {
+    background-color: #28a745; /* Verde para el usuario */
+    color: #fff;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.message.bot {
+    background-color: #ff9800; /* Naranja para el bot */
+    color: #fff;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+}
+
+.message.user::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #28a745;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.message.bot::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #ff9800;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+

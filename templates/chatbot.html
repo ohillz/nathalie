@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Kobe Sushi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo-kobe.jpeg') }}" alt="Kobe Sushi Rolls">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Menú</a></li>
+                <li><a href="/">Locales</a></li>
+                <li><a href="/">Reservas</a></li>
+                <li><a href="/">Acerca de Kobe</a></li>
+                <li><a href="/">Contacto</a></li>
+                <li><a href="/chatbot">Kibou</a></li>
+                <li>
+                    <a href="#" class="pedidos-online">
+                        <img src="{{ url_for('static', filename='images/pedidos.jpeg') }}" alt="Pedidos Online">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="replica">
+        <p>*Réplica de página web Kobe Sushi Rolls (Botones útiles: menú y Kibou)*</p>
+    </div>
+    
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe un mensaje a KIBOU...">
+                <button id="send-button">
+                    <div class="arrow-container">
+                        <div class="arrow-triangle"></div>
+                        <div class="arrow-rectangle"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centramos el contenido del header */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+nav {
+    flex: 1;
+    max-width: 1200px; /* Limita el ancho máximo del nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centramos los elementos del ul */
+    list-style: none;
+    margin: 0 auto; /* Centramos el ul dentro del nav */
+    padding: 0;
+    gap: 20px;
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta este valor para hacer el logo más grande */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px; /* Ajusta el tamaño de la fuente aquí */
+}
+
+.pedidos-online {
+    color: #ff6600;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin-bottom: 40px;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #000;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.panel {
+    padding: 0 15px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.panel.open {
+    display: block;
+    max-height: 1000px; /* Un valor suficientemente grande para permitir que todo el contenido se muestre */
+    padding: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-item-info {
+    padding: 20px;
+}
+
+.menu-item-info h3 {
+    margin: 0;
+}
+
+.menu-item-info p {
+    margin: 10px 0;
+}
+
+.menu-item-info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.indicator {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.replica {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+

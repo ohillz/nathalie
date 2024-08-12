@@ -1,0 +1,6 @@
+services:
+  visualizador:
+    image: oyhillz/nathalie:latest
+    container_name: oscar
+    ports:
+      - "8000:8000"
