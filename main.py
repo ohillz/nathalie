@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, jsonify
 import openai
-import os
+from os import getenv
 
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-api_key = os.environ.get('API_KEY')  # Reemplaza 'YOUR_API_KEY_HERE' con tu clave de API de OpenAI
+api_key = getenv.get('API_KEY')  # Reemplaza 'YOUR_API_KEY_HERE' con tu clave de API de OpenAI
 
 # Define the default route to return the index.html file
 @app.route("/")
