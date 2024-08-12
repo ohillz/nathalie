@@ -5,7 +5,7 @@ from os import getenv
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-api_key = getenv.get('API_KEY')  # Reemplaza 'YOUR_API_KEY_HERE' con tu clave de API de OpenAI
+api_key = getenv.get('API_KEY', "no-api-key")  # Reemplaza 'YOUR_API_KEY_HERE' con tu clave de API de OpenAI
 
 # Define the default route to return the index.html file
 @app.route("/")
