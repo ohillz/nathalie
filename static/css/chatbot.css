@@ -86,9 +86,11 @@ main {
 }
 
 #centered-image {
-    display: block;
+    display: flex;
+    position: relative;
+    top: -50px;
     margin: 0 auto 20px auto; /* Centrar horizontalmente y agregar margen debajo */
-    max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    max-width: 30%; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
