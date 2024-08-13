@@ -38,7 +38,8 @@
     <main>
         <div class="chat-container">
             <div class="chat-box" id="chat-box">
-                <!-- Messages will appear here -->
+                <img src="{{ url_for('static', filename='images/kiboulogo.png') }}" alt="Kobe Sushi Rolls">
+                <!-- Los mensajes aparecerán debajo de la imagen -->
             </div>
             <div class="chat-input">
                 <input type="text" id="user-input" placeholder="Escribe un mensaje a KIBOU...">
@@ -51,6 +52,7 @@
             </div>
         </div>
     </main>
+    
     <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
 </body>
 </html>

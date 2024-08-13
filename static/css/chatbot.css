@@ -79,9 +79,17 @@ main {
 .chat-box {
     flex: 1;
     padding: 20px;
-    overflow-y: auto; /* Permite el desplazamiento cuando haya muchos mensajes */
-    height: 80%; /* Tamaño fijo dentro del contenedor */
+    overflow-y: auto;
+    height: 80%; /* Ajuste para mantener el tamaño fijo */
     border-bottom: 1px solid #ddd;
+    position: relative; /* Para permitir el control de posicionamiento interno */
+}
+
+#centered-image {
+    display: block;
+    margin: 0 auto 20px auto; /* Centrar horizontalmente y agregar margen debajo */
+    max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .chat-input {
